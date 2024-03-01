@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Amancayjesus136/React-Front-End.github.io/static/css/main.db62923b.css",
+    "main.js": "/Amancayjesus136/React-Front-End.github.io/static/js/main.0d892816.js",
+    "static/js/453.ede2c593.chunk.js": "/Amancayjesus136/React-Front-End.github.io/static/js/453.ede2c593.chunk.js",
+    "index.html": "/Amancayjesus136/React-Front-End.github.io/index.html",
+    "main.db62923b.css.map": "/Amancayjesus136/React-Front-End.github.io/static/css/main.db62923b.css.map",
+    "main.0d892816.js.map": "/Amancayjesus136/React-Front-End.github.io/static/js/main.0d892816.js.map",
+    "453.ede2c593.chunk.js.map": "/Amancayjesus136/React-Front-End.github.io/static/js/453.ede2c593.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db62923b.css",
+    "static/js/main.0d892816.js"
+  ]
+}
