@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/Amancayjesus136/React-Front-End.github.io/' element={ <ShowProducts/> }/>
+          <Route path='/' element={ <ShowProducts/> }/>
           <Route path='/create' element={ <CreateProduct/> }/>
           <Route path='/edit/:id' element={ <EditProduct/> }/>
         </Routes>
