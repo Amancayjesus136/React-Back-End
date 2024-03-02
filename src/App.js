@@ -2,16 +2,18 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //importar nuestros componentes
-import ShowProducts from './components/ShowProducts';
-import CreateProduct from './components/CreateProduct';
-import EditProduct from './components/EditProduct';
+import ShowProducts from './components/Product/ShowProducts';
+import CreateProduct from './components/Product/CreateProduct';
+import EditProduct from './components/Product/EditProduct';
+import NavMenu from './components/Nav/NavMenu';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={ <ShowProducts/> }/>
+          <Route path='/' element={ <NavMenu/> }/>
+          <Route path='/show' element={ <ShowProducts/> }/>
           <Route path='/create' element={ <CreateProduct/> }/>
           <Route path='/edit/:id' element={ <EditProduct/> }/>
         </Routes>
