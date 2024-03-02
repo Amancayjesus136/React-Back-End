@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, Box, Heading, Stack } from '@chakra-ui/react'
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Information = () => {
     return (
@@ -30,10 +30,10 @@ const Information = () => {
                 </Heading>
 
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px', alignItems: 'center' }}>
-                    <FaTwitter size={30} style={{ marginRight: '20px' }} />
-                    <FaFacebook size={30} style={{ marginRight: '20px' }} />
-                    <FaInstagram size={30} style={{ marginRight: '20px' }} />
-                    <FaLinkedin size={30} />
+                    <FaTwitter size={30} style={{ marginRight: '20px'}} />
+                    <FaGithub size={30} style={{ marginRight: '20px'}} />
+                    <FaInstagram size={30} style={{ marginRight: '20px'}} />
+                    <FaLinkedin size={30} style={{ marginRight: '20px'}} />
                 </div>
 
             </Stack>
