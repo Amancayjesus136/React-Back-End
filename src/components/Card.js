@@ -11,7 +11,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import About from './About';
+import MenuUser from '../layouts/MenuUser';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -40,7 +40,7 @@ const Card = () => {
 
     return (
         <>
-            <About />
+            <MenuUser />
 
             <div className="container" style={{ marginTop: '70px' }}>
                 <div className="row">

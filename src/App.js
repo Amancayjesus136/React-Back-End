@@ -9,7 +9,6 @@ import Dashboard from './view/Home/Dashboard';
 import Login from './view/Auth/Login';
 import About from './components/About';
 import Card from './components/Card';
-import Information from './components/Information';
 import Cv from './view/Home/Cv';
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/info' element={<Information />} />
           <Route path='/about' element={<About />} />
           <Route path='/card' element={<Card />} />
           <Route path='/cv' element={<Cv />} />
