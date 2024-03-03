@@ -50,12 +50,92 @@ const Card = () => {
                                 <CardMedia
                                     component="img"
                                     height="194"
-                                    image="static/images/autentication.jpeg"
+                                    image="static/images/crud.jpg"
                                     alt="Paella dish"
                                 />
                                 <CardContent>
                                     <Typography variant="body2" color="text.secondary">
                                         Empezar a trabajar con una base de datos MySQL con Laravel para realizar un CRUD
+                                    </Typography>
+                                </CardContent>
+                                <CardActions disableSpacing>
+                                    <IconButton aria-label="add to favorites">
+                                        <FavoriteIcon />
+                                    </IconButton>
+                                    <IconButton aria-label="share">
+                                        <ShareIcon />
+                                    </IconButton>
+                                    <ExpandMore
+                                        expand={expanded}
+                                        onClick={handleExpandClick}
+                                        aria-expanded={expanded}
+                                        aria-label="show more"
+                                    >
+                                        <ExpandMoreIcon />
+                                    </ExpandMore>
+                                </CardActions>
+                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                    <CardContent>
+                                        <Typography paragraph>Method:</Typography>
+                                        {/* Resto del contenido colapsado */}
+                                    </CardContent>
+                                </Collapse>
+                            </MuiCard>
+                        </CenteredCard>
+                    </div>
+
+                    <div className="col-12 col-sm-4">
+                        <CenteredCard>
+                            <MuiCard sx={{ maxWidth: 345 }}>
+                                <CardMedia
+                                    component="img"
+                                    height="194"
+                                    image="static/images/login.jpg"
+                                    alt="Paella dish"
+                                />
+                                <CardContent>
+                                    <Typography variant="body2" color="text.secondary">
+                                        Como crear tu propia autenticacion sin usar librerias de laravel desde 0 usando MYSQL
+                                    </Typography>
+                                </CardContent>
+                                <CardActions disableSpacing>
+                                    <IconButton aria-label="add to favorites">
+                                        <FavoriteIcon />
+                                    </IconButton>
+                                    <IconButton aria-label="share">
+                                        <ShareIcon />
+                                    </IconButton>
+                                    <ExpandMore
+                                        expand={expanded}
+                                        onClick={handleExpandClick}
+                                        aria-expanded={expanded}
+                                        aria-label="show more"
+                                    >
+                                        <ExpandMoreIcon />
+                                    </ExpandMore>
+                                </CardActions>
+                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                    <CardContent>
+                                        <Typography paragraph>Method:</Typography>
+                                        {/* Resto del contenido colapsado */}
+                                    </CardContent>
+                                </Collapse>
+                            </MuiCard>
+                        </CenteredCard>
+                    </div>
+
+                    <div className="col-12 col-sm-4">
+                        <CenteredCard>
+                            <MuiCard sx={{ maxWidth: 345 }}>
+                                <CardMedia
+                                    component="img"
+                                    height="194"
+                                    image="static/images/apirest.jpg"
+                                    alt="Paella dish"
+                                />
+                                <CardContent>
+                                    <Typography variant="body2" color="text.secondary">
+                                        Como integrar API de Consulta de DNI, RUC, TIPO DE CAMBIO en tu sistema usando laravel
                                     </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
