@@ -29,7 +29,31 @@ const About = () => {
                     Me caracterizo por la orientación al logro, capacidad de análisis, compromiso y proactividad.
                     He adquirido experiencia en proyectos múltiples. Además, soy programador "full stack", con habilidades en frameworks como React y Angular para el frontend, y Laravel, PHP nativo y NodeJs para el backend. Además, tengo experiencia en el manejo de diversas bases de datos como MySQL, SQL Server, Oracle y MongoDB.
                 </Heading>
+
+                <hr></hr>
+
+                <Heading
+                    as='h4'
+                    size='xs'
+                    color='black'
+                    style={{ marginTop: '50px' }}>
+                    Experiencia <br></br>
+                    <span style={{ fontSize: '20px'}} >Vibra</span>
+                </Heading>
+
+                <Heading
+                    as='h6'
+                    size='xs'
+                    color='gray'
+                    display="flex"
+                    alignItems="right">
+                    Full Stack Developer<br />
+                    Junio 2023 - Actualidad <br />
+                    Desarrollador y analista de sistema Improve 
+                </Heading>
+                
             </div>
+
         </>
     );
 };
