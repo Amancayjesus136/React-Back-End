@@ -1,14 +1,11 @@
 import React from 'react';
-import MenuUser from '../../layouts/MenuUser';
-import Information from '../../components/Information';
-import ShowProducts from '../Product/ShowProducts';
+import Card from '../../components/Card';
 
 const Dashboard = () => {
     return (
-        <body>
-            <MenuUser />
-            <Information />
-        </body>
+        <div>
+            <Card />
+        </div>
     );
 }
 

@@ -80,58 +80,58 @@ export default function SignInSide() {
                 <Typography component="h1" variant="h5">
                     Iniciar sesión
                 </Typography>
-                <Box
-                    component="form"
-                    noValidate
-                    onSubmit={handleSubmit}
-                    sx={{ mt: 1 }}
-                >
-                    <TextField
-                    margin="normal"
-                    required
-                    fullWidth
-                    id="email"
-                    label="Dirección de correo electrónico"
-                    name="email"
-                    autoComplete="email"
-                    autoFocus
-                    />
-                    <TextField
-                    margin="normal"
-                    required
-                    fullWidth
-                    name="password"
-                    label="Contraseña"
-                    type="password"
-                    id="password"
-                    autoComplete="current-password"
-                    />
-                    <FormControlLabel
-                    control={<Checkbox value="remember" color="primary" />}
-                    label="Recuedame"
-                    />
-                    <Button
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    sx={{ mt: 3, mb: 2 }}
+                    <Box
+                        component="form"
+                        noValidate
+                        onSubmit={handleSubmit}
+                        sx={{ mt: 1 }}
                     >
-                    Sign In
-                    </Button>
-                    <Grid container>
-                    <Grid item xs>
-                        <Link href="#" variant="body2">
-                            ¿Has olvidado tu contraseña?
-                        </Link>
-                    </Grid>
-                    <Grid item>
-                        <Link href="#" variant="body2">
-                        {"¿No tienes una cuenta? Inicia sesión"}
-                        </Link>
-                    </Grid>
-                    </Grid>
-                    <Copyright sx={{ mt: 5 }} />
-                </Box>
+                        <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="email"
+                        label="Dirección de correo electrónico"
+                        name="email"
+                        autoComplete="email"
+                        autoFocus
+                        />
+                        <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        name="password"
+                        label="Contraseña"
+                        type="password"
+                        id="password"
+                        autoComplete="current-password"
+                        />
+                        <FormControlLabel
+                        control={<Checkbox value="remember" color="primary" />}
+                        label="Recuedame"
+                        />
+                        <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+                        >
+                        Sign In
+                        </Button>
+                        <Grid container>
+                        <Grid item xs>
+                            <Link href="#" variant="body2">
+                                ¿Has olvidado tu contraseña?
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link href="#" variant="body2">
+                            {"¿No tienes una cuenta? Inicia sesión"}
+                            </Link>
+                        </Grid>
+                        </Grid>
+                        <Copyright sx={{ mt: 5 }} />
+                    </Box>
                 </Box>
             </Grid>
             </Grid>

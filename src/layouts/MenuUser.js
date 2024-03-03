@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,11 +12,13 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const MenuUser = () => {
     const pages = ['Sobre mi', 'CV', 'Blog', 'Cetificados'];
     const settings = ['Login', 'Configuracion'];
+
+    const navigate = useNavigate();
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -119,11 +121,16 @@ const MenuUser = () => {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            key={page}
+                            onClick={() => {
+                                handleCloseNavMenu();
+                                if (page === 'CV') {
+                                navigate('/about');
+                                }
+                            }}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
                             >
-                                {page}
+                            {page}
                             </Button>
                         ))}
                     </Box>
@@ -161,6 +168,7 @@ const MenuUser = () => {
                 </Toolbar>
             </Container>
         </AppBar>
+        
     );
 };
 
